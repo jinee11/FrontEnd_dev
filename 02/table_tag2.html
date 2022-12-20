@@ -1,0 +1,53 @@
+<!DOCTYPE html> <!-- 노트O-->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>셀 병합하기 - table </title>
+  
+  <!-- CSS 적용 (head블락안에서 style태그)-->
+  <style>
+      table, tr, th, td{
+        border-collapse: collapse;
+      }
+  </style>
+</head>
+<body>
+  <!-- 테이블 태그의 속성 
+      colspan : 열을 합치는 것 (불쾌지수와 습도를 합친다)
+      rowspan : 행을 합치는것 (서울과 경기도를 합친다)
+  -->
+  <h1 align = "center"> 테이블 태그에서 셀 병합하기</h1>
+
+  <table border="1" width="500" height="100" align="center">
+    <tr>
+      <td align="center"><b> 지역 </b> </td>
+      <td align="center"><b> 현재기온 </b></td>
+      <td colspan="3" align="center"><b> 불쾌지수 / 습도 / 풍속 </b></td>
+    </tr>
+    <tr>
+      <td rowspan="3" align="center"> 서울 / 경기도 / 제주도</td>
+      <td align="center"> 40 </td>
+      <td align="center"> 60 </td>
+      <td align="center"> 80</td>
+      <td align="center"> 4.5</td>
+    </tr>
+    <tr>
+      
+      <td align="center"> 45 </td>
+      <td align="center"> 60 </td>
+      <td align="center"> 80</td>
+      <td align="center"> 2.5</td>
+    </tr>
+    <tr>
+      
+      <td align="center"> 45 </td>
+      <td align="center"> 65 </td>
+      <td align="center"> 80</td>
+      <td align="center"> 8.5</td>
+    </tr>
+</table>
+  
+</body>
+</html>
