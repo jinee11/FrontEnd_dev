@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .c1 { width: 8.33%; float: left; }
+      .c2 { width: 16.66%; float: left; }
+      .c3 { width: 25%; float: left; }
+      .c4 { width: 33.33%; float: left; }
+      .c5 { width: 41.66%; float: left; }
+      .c6 { width: 50%; float: left; }
+      .c7 { width: 58.33%; float: left; }
+      .c8 { width: 66.66%; float: left; }
+      .c9 { width: 75%; float: left; }
+      .c10 { width: 83.33%; float: left; }
+      .c11 { width: 91.66%; float: left; }
+      .c12 { width: 100%; float: left; }
+
+      *{margin: 0; padding: 0;}
+      body {
+         background: rgb(223, 223, 223);
+         /* border: 1px solid red; */
+      }
+
+      div {
+         /* border: 1px solid red; */
+      }
+      ul {
+         list-style-type: none;
+      }
+
+      /* 헤더 */
+      header {
+         /* border: 1px solid red; */
+         /* height: 120px; */
+         height: 20%;
+      }
+      #h_1 {
+         height: 75px;
+         line-height: 75px;
+         text-align: center;
+         font-size: 30px;
+         font-weight: 600;
+         color: white;
+         background: rgb(44, 29, 255);
+      }
+      nav {
+         /* border: 1px solid red; */
+         /* height: 45px; */
+         background: rgb(214, 184, 245);
+         text-align: center;
+      }
+      nav li {
+         display: inline-block;
+         color: white;
+         font-weight: 600;
+         margin: 10px 25px 0 25px;
+         padding: 0 0 10px 0;
+         
+      }
+     
+      /* 메인 */
+      main {
+         /* border: 1px solid red; */
+         height: 450px;
+         
+      }
+      #m_1 {
+         height: 60px;
+         margin: 50px 0 20px 0;
+         line-height: 60px;
+         text-align: center;
+         font-size: 25px;
+         font-weight: 600;
+      }
+      section {
+         /* border: 1px solid red; */
+         height: 200px;
+         text-align: center;
+      }
+      table {
+         border: 1px solid rgb(173, 173, 173);
+         margin-left: auto;
+         margin-right: auto;
+         width: 50%;
+         
+      }
+      table tr,td{
+         border: 1px solid rgb(173, 173, 173);
+      }
+
+      .input {
+         border-radius: 10px;
+         border: 1px solid rgb(173, 173, 173);
+      }
+
+      table input:focus {
+         outline: none;
+      }
+      
+
+      /* 푸터 */
+
+      footer {
+         /* border: 1px solid red; */
+         /* height: 80px; */
+         height: 10%;
+         line-height: 80px;
+         text-align: center;
+         color: white;
+         font-size: 22px;
+         background: linear-gradient(120deg, rgb(0, 47, 255), rgb(124, 159, 241));
+      }
+      
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <header class="c12">
+         <div id="h_1" class="c12">
+            쇼핑몰 회원관리 VER 1.0
+         </div>
+         <nav class="c12">
+            <ul>
+               <li>회원등록</li>
+               <li>회원목록조회/수정</li>
+               <li>회원매출조회</li>
+               <li>홈으로</li>
+            </ul>
+         </nav>
+      </header>
+
+      <main class="c12">
+         <div id="m_1" class="12">
+            쇼핑몰 회원 등록
+         </div>
+         <section class="c12">
+            <table>
+               <tr>
+                  <td>회원번호(자동발생)</td>
+                  <td align="left"><input class="input" type="text" name="num"> </td>
+               </tr>
+               <tr>
+                  <td>회원성명</td>
+                  <td align="left"> <input class="input" type="text" name="name"> </td>
+               </tr>
+               <tr>
+                  <td>회원주소</td>
+                  <td align="left"><input class="input" type="text" name="arr"> </td>
+               </tr>
+               <tr>
+                  <td>가입일자</td>
+                  <td align="left"><input class="input" type="text" name="hi"> </td>
+               </tr>
+               <tr>
+                  <td>고객등급[A:VIP,B:일반,C:직원]</td>
+                  <td align="left"><input class="input" type="text" name="mal"> </td>
+               </tr>
+               <tr>
+                  <td>도시코드</td>
+                  <td align="left"><input class="input" type="text" name="code"> </td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <input type="button" value="등록">
+                     <input type="button" value="조회">
+                  </td>
+               </tr>
+            </table>
+         </section>
+      </main>
+      
+      <footer class="c12">
+         HRDKOREA Copyright@2016 All rights reserve. Human Resources Decelopment Serivce of Korea
+      </footer>
+   </div>
+   
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html><!-- 노트 -->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Position : 블락태그는 박스를 만들 수 있고 박스의 위치를 설정 </title>
+  <style>
+    body {
+      font-weight: bolder;
+      font-size: 12px;
+    }
+    p {
+      border: 1px solid red; 
+    }
+    .b1 {
+      position:static;
+      top: 500px; /* static은 포지션 설정이 작동이 안된다*/
+      width: 400px; height: 50px;
+    }
+    .b2 {
+      position: static;
+      top: 300px; left: 300px;
+      width: 400px; height: 50px;
+    }
+    .b3 {
+      width: 400px; height: 50px;
+    }
+  </style>
+</head>
+<body>
+<!--
+  정적 위치 설정 : position:static;
+    - position 기본 설정
+    - 웹문서 흐름에 따라 배치, 고정되어 있다.
+    - top, right, bottom, left 설정을 해도 작동이 안된다
+
+  상대 위치 설정 : position:relative;
+    - 원래 박스가 위치해있던 기준으로 상대적으로 위치를 처리
+    - 포지션 위치가 정의되지 않는 기본 상태가 기준점
+
+  절대 위치 설정 : position:absolute;
+    - 전체 페이지 기준으로 왼쪽 최상단이 기준점 : top 0, left 0
+      - top, right, bottom, left
+
+  고정 위치 설정 : position:fixed;
+    - 절대 위치와 동일하게 기준을 잡되, 
+      스크롤이 움직이더라도 화면에 해당 위치 그대로 고정되어 출력
+    - 기준이 absolute와 같다
+-->
+
+  <h1> Position Style 1 - Static </h1>
+  <p class="b1"> 정적 위치 설정 적용1 </p>
+  <p class="b2"> 정적 위치 설정 적용2 </p>
+  <p class="b3"> 기본 위치 설정 적용 </p>
+</body>
+</html>

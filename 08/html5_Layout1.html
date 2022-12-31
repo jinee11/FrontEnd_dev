@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>2단 고정 레이아웃</title>
+   <style>
+      * {margin: 0; padding: 0;}
+      #wrap {
+         border: 1px solid red;
+         width: 900px;
+         margin: 0 auto;
+      }
+      header {
+         border: 1px solid red;
+         height: 88px;
+      }
+      aside {
+         border: 1px solid red;
+         width: 200px; height: 300px;
+         float: left;
+         background-color: yellow;
+      }
+      main {
+         border: 1px solid red;
+         width: 700px; height: 300px;
+         margin-left: 200px;
+         background-color: blue !important;
+      } 
+      .clear {
+         clear: both;
+      }
+      footer {
+         border: 1px solid red;
+         height: 90px;
+      }
+   </style>
+</head>
+<body>
+   <!-- 2단 고정 레이아웃 :픽셀로 레이아웃을 지정 - 화면의 크기가 고정 -->
+   <div id="wrap">
+      <header> 헤터 컨텐츠 </header>
+
+      <aside> 좌측 컨텐츠 </aside>
+
+      <main> 메인 컨텐츠 </main>
+
+      <div class="clear"></div>
+
+      <footer> 푸더 컨텐츠 </footer>
+   </div>
+   
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!--노트-->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector - 후손, 자손, 일반형제, 그룹 선택자</title>
+  <style>
+      div ul {
+        color: red;
+      }
+      div h2 {
+        color: yellow;
+        background-color: purple;
+      }
+
+
+      body > div > h3 {
+        color: blue;
+      }
+      body > p {
+        color: green;
+        background-color: yellow;
+      }
+      body > h3 > tel> home {
+        color: aqua;
+      }
+
+
+      
+  </style>
+</head>
+<body>
+  <h3> Selector(조합 선택자) - 후손(공백), 자손(>), 
+              인접 일반형제(+), 일반 형제(~), 그룹 선택자(,) </h3>
+
+<!--
+  1. 후손 선택자 : 선택자A 선택자B   <- 선택자B는 선택자A에 반드시 포홤된 경우
+  2. 자손 선택자 : 선택자A > 선택자B <- 부모 선택자A의 직계 자손인 선택자B를 선택 
+  3. 인접 형제 선택자 : 선택자A + 선택자B <- 선택자A에 바로 다음에 위치한 선택자B를 선택
+  4. 일반 형제 선택자 : 선택자A ~ 선택자B <- 선택자A에 직접해서 나타나는 선택자B
+  5. 그룹 선택자 : 선택자A, 선택자B  <- 선택자A, 선택자B를 모두 선택       
+-->
+  
+<!-- 1. 후손 선택자 예제 -->
+  <div>
+      <h2> Descendant selector_1 (후손 선택자) </h2>
+      <ul> 후손 선택자
+          <li> 자식의 자식 (후손1) </li>
+          <li> 자식의 자식 (후손2) </li>
+      </ul>
+  </div>
+  <h2> Descendant selector_2 (후손 선택자) </h2> 
+  <!--div 태그 밖이라 후손이 아니라서 적용안됨-->
+
+<!-- 2. 자손 선택자 예제 -->
+  <div>
+      <h3> Child Selector_1 (자손 선택자) </h3>
+  </div>
+  <p> 자손 선택자 </p>
+  <h3>
+      <sno> 123456 </sno>
+      <std> 홍길동 </std>
+      <tel>
+        <office> 02-3456-7890 </office><br>
+        <home> 010-2345-6789 </home>
+      </tel>
+  </h3>
+
+</body>
+</html>

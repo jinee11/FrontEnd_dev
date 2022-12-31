@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!-- 노트 -->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Position : 블락태그는 박스를 만들 수 있고 박스의 위치를 설정 </title>
+  <style>
+
+    * {margin: 10;}
+
+    body {
+      font-weight: bolder;
+      font-size: 12;
+    }
+    p {
+      width: 400px; height: 50px; 
+      border: 1px solid red;
+    }
+    .b1 {
+      position: static; /*포지션 설정 작동 안됨*/
+      top: 100px; left: 100px;
+    }
+    .b2 {
+      position: relative; 
+      top: 30px; left: 30px;
+    }
+    .b3 {
+      position: relative; 
+      top: 30px; left: 30px;
+    }
+  </style>
+</head>
+<body>
+<!--
+  상대 위치 설정 : position:relative;
+    - 원래 박스가 위치해있던 기준으로 상대적으로 위치를 처리
+  -->
+
+
+  <h1> Position Style 2 - Relative </h1>
+  <p class="b1"> 정적 위치 설정 적용 </p>
+  <p class="b2"> 상대 위치 설정 적용1 </p>
+  <p class="b3"> 상대 위치 설정 적용2 </p>
+</body>
+</html>

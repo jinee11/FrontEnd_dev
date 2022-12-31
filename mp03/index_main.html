@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+      }
+
+      ul {
+         /* border: 1px solid red; */
+         list-style-type: none;
+      }
+
+      #clear {
+         clear: both;
+      }
+
+      body {
+         /* border: 1px solid red; */
+         background-color: rgb(242, 240, 240);
+         font-size: 13px;
+         color: rgb(110, 110, 110);
+       
+      }
+      #item_table {
+         border-collapse : collapse;
+         font-size: 15px;
+         font-weight: 700;
+      }
+      #item_table td{
+         border: 1px solid rgb(198, 198, 198) ; 
+         border-left: hidden;
+         border-right: hidden;
+         margin-left: 10px;
+         padding: 5px 20px 5px 30px;
+      }
+         
+      #spe_table{
+         margin-top: 5px;
+         margin-left: -20px;
+      }
+
+      #spe_table td{
+         border: 1px solid rgb(198, 198, 198);
+         padding: 20px;
+      }
+
+      .line {
+         background-color: rgb(150, 193, 31);
+         height: 2px;
+      }
+
+      /* 라인 이후 */
+
+      #new {
+         font-size: 15px;
+         font-weight: 700;
+         margin: 0 0 0 10px;
+      }
+      #new> span {
+         color: rgb(150, 193, 31);
+      }
+      .new1 {
+         color: rgb(150, 193, 31);
+      }
+      .new2 {
+         color: rgb(0, 0, 0);
+         font-weight: 600;
+      }
+
+
+      .clear {
+         clear: both;
+      }
+
+      #new_table {
+         margin: 15px;
+      }
+
+      #new_table td {
+         padding: 0 15px 10px 15px;
+      }
+
+
+
+   </style>
+</head>
+
+<body>
+   <div id="index_main">
+      <table >
+         <tr>
+            <td rowspan="2">
+               <table id="item_table">
+                  <tr>
+                     <td bgcolor="#96C11F" ><font color="white">CATEGORY ITEM</font></td>
+                  </tr>
+                  <tr>
+                     <td>생활 아트</td>
+                  </tr>
+                  <tr>
+                     <td>캔버스 아트</td>
+                  </tr>
+                  <tr>
+                     <td>사진 벽지</td>
+                  </tr>
+                  <tr>
+                     <td>창문형/현관문형</td>
+                  </tr>
+                  <tr>
+                     <td>포인트 벽지</td>
+                  </tr>
+                  <tr>
+                     <td>세계지도</td>
+                  </tr>
+                  <tr>
+                     <td>앤티크 세계지도 벽지</td>
+                  </tr>
+                  <tr>
+                     <td>입체 세계지도 벽지</td>
+                  </tr>
+                  <tr>
+                     <td>어린이방 세계지도 벽지</td>
+                  </tr>
+                  <tr>
+                     <td>족자형 롤스크린</td>
+                  </tr>
+                  <tr>
+                     <td>맞춤제작 결제창</td>
+                  </tr>
+               </table>
+            </td>
+            <td rowspan="2">
+               <div><img src="./img/main_img.gif"> </div>
+            </td>
+            <td>
+               <div style="position: relative;">
+                  <img src="./img/latest_notice.gif">
+                  <div style="position: absolute; top: 40px; left: 15px;">
+                     <ul>
+                        <li>
+                           <img src="./img/blue_dot.gif">
+                           폭설로 인한 배송지연 안내
+                        </li>
+                        <li>
+                           <img src="./img/blue_dot.gif">
+                           폭설로 인한 배송지연 안내
+                        </li>
+                        <li>
+                           <img src="./img/blue_dot.gif">
+                           폭설로 인한 배송지연 안내
+                        </li>
+                        <li>
+                           <img src="./img/blue_dot.gif">
+                           폭설로 인한 배송지연 안내
+                        </li>
+                        <li>
+                           <img src="./img/blue_dot.gif">
+                           폭설로 인한 배송지연 안내
+                        </li>
+                        <li>
+                           <img src="./img/blue_dot.gif">
+                           폭설로 인한 배송지연 안내
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <div style="position: relative;">
+                  <img src="./img/week_event.gif"></img>
+                  <div style="position: absolute; top: 60px; left: 20px;">
+                     <img src="./img/week_event_img.gif"></img>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <table>
+         <tr>
+            <td rowspan="3">
+               <div style="position: relative;">
+                  <img src="./img/special_shop.gif">
+                  <div style="position: absolute; top:50px; left: 50px;">
+                     <table id="spe_table">
+                        <tr>
+                           <td><img src="./img/special_img1.gif"> </td>
+                           <td><img src="./img/special_img2.gif"> </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div style="position: relative;">
+                  <img src="./img/landscape.gif">
+                  <div style="position: absolute; top:5px; left: 130px;">
+                     <table>
+                        <tr>
+                           <td><img src="./img/landscape_img1.gif"> </td>
+                           <td width="2px"></td>
+                           <td><img src="./img/landscape_img2.gif"> </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+         <tr rowspan="3">
+            <td >
+               <div style="position: relative;">
+                  <img src="./img/point_wallpaper.gif">
+                  <div style="position: absolute; top:5px; left: 130px;">
+                     <table>
+                        <tr>
+                           <td><img src="./img/point_wallpaper_img1.gif"> </td>
+                           <td width="2px"></td>
+                           <td><img src="./img/point_wallpaper_img2.gif"> </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+         <tr rowspan="3">
+            <td>
+               <div style="position: relative;">
+                  <img src="./img/children.gif">
+                  <div style="position: absolute; top:5px; left: 130px;">
+                     <table>
+                        <tr>
+                           <td><img src="./img/children_img1.gif"> </td>
+                           <td width="2px"></td>
+                           <td><img src="./img/children_img2.gif"> </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <table>
+         
+      </table>
+      
+      
+      <table id="new_table">
+         <tr>
+            <td colspan="4"><hr class="line"></td>
+         </tr>
+         <tr>
+            <td colspan="4">
+               <div id="new">
+               <span>NEW ARRIVAL</span> 신규상품
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td><img src="./img/new_01.jpg"></td>
+            <td><img src="./img/new_02.jpg"></td>
+            <td><img src="./img/new_03.jpg"></td>
+            <td><img src="./img/new_04.jpg"></td>
+         </tr>
+         <tr>
+            <td align="center">
+               <span class="new1">맞춤제작(풍경)</span><br>
+               원하는 사이즈로 제작가능<br>
+               <span class="new2">20,000원</span>
+            </td>
+            <td align="center">
+               <span class="new1">맞춤제작(풍경)</span><br>
+               원하는 사이즈로 제작가능<br>
+               <span class="new2">20,000원</span>
+            </td>
+            <td align="center">
+               <span class="new1">맞춤제작(풍경)</span><br>
+               원하는 사이즈로 제작가능<br>
+               <span class="new2">20,000원</span>
+            </td>
+            <td align="center">
+               <span class="new1">맞춤제작(풍경)</span><br>
+               원하는 사이즈로 제작가능<br>
+               <span class="new2">20,000원</span>
+            </td>
+         </tr>
+         <tr>
+            <td><img src="./img/new_05.jpg"></td>
+            <td><img src="./img/new_06.jpg"></td>
+            <td><img src="./img/new_07.jpg"></td>
+            <td><img src="./img/new_08.jpg"></td>
+         </tr>
+         <tr>
+            <td align="center">
+               <span class="new1">맞춤제작(풍경)</span><br>
+               원하는 사이즈로 제작가능<br>
+               <span class="new2">20,000원</span>
+            </td>
+            <td align="center">
+               <span class="new1">맞춤제작(풍경)</span><br>
+               원하는 사이즈로 제작가능<br>
+               <span class="new2">20,000원</span>
+            </td>
+            <td align="center">
+               <span class="new1">맞춤제작(풍경)</span><br>
+               원하는 사이즈로 제작가능<br>
+               <span class="new2">20,000원</span>
+            </td>
+            <td align="center">
+               <span class="new1">맞춤제작(풍경)</span><br>
+               원하는 사이즈로 제작가능<br>
+               <span class="new2">20,000원</span>
+            </td>
+         </tr>
+      </table>
+
+
+
+   </div>
+
+</body>
+
+</html>

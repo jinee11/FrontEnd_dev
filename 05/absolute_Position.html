@@ -1,0 +1,38 @@
+<!DOCTYPE html> <!-- 노트 -->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Position : 블락태그는 박스를 만들 수 있고 박스의 위치를 설정 </title>
+  <style>
+    * {margin: 0;}
+    p {width: 400px; height: 50px; border: 1px solid red;}
+    .b1 {
+      position: absolute;
+      top: 50px; left: 100px;
+    }
+    .b2 {
+      position: absolute;
+      top: 52px; left: 102px;
+    }
+    .b3 {
+      position: relative;
+      top: 30px; left: 30px;
+    }
+  </style>
+</head>
+<body>
+<!--
+
+  절대 위치 설정 : position:absolute;
+    - 전체 페이지 기준으로 왼쪽 최상단이 기준점 : top 0, left 0
+      - top, right, bottom, left
+-->
+
+  <h1> Position Style 3 - Absolute </h1>
+  <p class="b1"> 절대 위치 설정 적용1 </p>
+  <p class="b2"> 절대 위치 설정 적용2 </p>
+  <p class="b3"> 상대 위치 설정 적용 </p>
+</body>
+</html>

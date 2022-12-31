@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!--노트-->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector - 후손, 자손, 일반형제, 그룹 선택자</title>
+  <style>
+    h1 ~ ul {
+      color: blue;
+    }
+    p ~ ul {
+      color: red !important;
+    }
+
+
+    h1, h2, h3 {
+      background-color: hotpink;
+    }
+  </style>
+</head>
+<body>
+  <h3> Selector(조합 선택자) - 후손(공백), 자손(>), 
+              인접 일반형제(+), 일반 형제(~), 그룹 선택자(,) </h3>
+
+<!--
+  1. 후손 선택자 : 선택자A 선택자B   <- 선택자B는 선택자A에 반드시 포홤된 경우
+  2. 자손 선택자 : 선택자A > 선택자B <- 부모 선택자A의 직계 자손인 선택자B를 선택 
+  3. 인접 형제 선택자 : 선택자A + 선택자B <- 선택자A에 바로 다음에 위치한 선택자B를 선택
+  4. 일반 형제 선택자 : 선택자A ~ 선택자B <- 선택자A에 직접해서 나타나는 선택자B
+  5. 그룹 선택자 : 선택자A, 선택자B  <- 선택자A, 선택자B를 모두 선택       
+-->
+  
+<!-- 4. 일반 형제 선택자, 5. 그룹 선택자 예제 -->
+  <div>
+    <h1> 형제 선택자 1 </h1>
+    <h2> 형제 선택자 2 </h2>
+    <ul> 목록
+        <li> 주제1 </li>
+        <li> 주제2 </li>
+    </ul>
+  </div>
+  <h3> Silbing Selector_1 </h3>
+  <h4> 같은 레벨의 형제 </h4>
+  <p> 일반 형제 선택자에 의한 스타일 적용 </p>
+  <h3> Silbing Selector_2 </h3>
+  <h3> Silbing Selector_3 </h3>
+
+  <ul> 목록2
+    <li> 주제3 </li>
+    <li> 주제4 </li>
+  </ul>
+
+
+</body>
+</html>

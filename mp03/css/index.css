@@ -1,0 +1,139 @@
+* {margin: 0; padding: 0;}
+a {
+   text-decoration: none;
+}
+ul {
+   list-style-type: none;
+}
+body {
+   /* border: 1px solid red; */
+   background-color: rgb(242, 240, 240);
+   font-size: 13px;
+   color: rgb(110, 110, 110);
+}
+.clear {
+   clear: both;
+}
+div {
+   /* border: 1px solid red; */
+}
+
+#wrap {
+   width: 1080px; height: 1540px;
+   margin: 0 auto;
+}
+
+/* 헤더 */
+#out_header {
+
+   width: 1080px; height: 120px;
+}
+
+/* aside 두번째 페이지부터 적용하기*/
+/* #out_aside {
+   width: 300px; height: 1300px;
+} */
+
+/* 메인 두번째 페이지부터 적용하기*/
+/* #out_main {
+   width: 772px; height: 1300px;
+   float: left;
+} */
+#out_main {
+   width: 1080px; height: 1290px;
+   float: left;
+}
+/* 푸터 */
+#out_footer {
+   width: 1080px; height: 150px;
+   float: left
+}
+
+/* 헤더  설정 시작*/
+#h_login li{
+   display: inline;
+   margin: 5px;
+}
+span {
+   color: rgb(150, 193, 31);
+}
+#h_line li{
+   display: inline;
+   color: white;
+   font-size: 15px;
+   margin: 40px;
+   position: relative;
+   top: 10px; left: 140px;
+}
+
+
+/* div 크기, 위치이동 */
+#h_logo {
+   width: 200px;
+   height: 55px;
+   float: left;
+   margin: 20px 0 0px 70px;
+}
+#h_search {
+   width: 200px;
+   height:45px;
+   float: left;
+   margin: 30px 0 0 120px;
+}
+#h_login {
+   width: 350px;
+   height: 20px;
+   float: right;
+   margin: 40px 25px 0 0;
+}
+#h_line {
+   width: 1080px; height: 40px;
+   background-color: rgb(78, 76, 77);
+   float: left;
+}
+
+/* aside */
+
+#out_aside {
+   float: left;
+}
+
+/* footer */
+
+#f_line li{
+   display: inline;
+   color: white;
+   font-size: 15px;
+   margin: 5px;
+   position: relative;
+   top: 10px; left: 220px;
+}
+
+#f_line {
+   width: 1080px; height: 40px;
+   background-color: rgb(78, 76, 77);
+   float: left;
+}
+
+#f_logo {
+   width: 130px;
+   height: 55px;
+   float: left;
+   margin: 30px 0 0px 65px;
+}
+
+#f_add {
+   width: 200px;
+   height: 55px;
+   float: left;
+   margin: 20px 0 0px 70px;
+}
+
+#f_go {
+   width: 200px;
+   height: 55px;
+   float: right;
+   margin: 20px 0 0px 30px;
+   position: relative;
+   left: -30px;
+}

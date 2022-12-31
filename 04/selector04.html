@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector - 후손, 자손, 일반형제, 그룹 선택자</title>
+  <style>
+      h1 + h2 + ul {
+        color: blue;
+      }
+      div + h3 {
+        color: red;
+      }
+      h3 + p {
+        color: purple;
+        background-color: yellow;
+      }
+      span + p {
+        color: brown;
+        background-color: aqua;
+      }
+  </style>
+</head> <!--노트-->
+<body>
+  <h3> Selector(조합 선택자) - 후손(공백), 자손(>), 
+              인접 일반형제(+), 일반 형제(~), 그룹 선택자(,) </h3>
+
+<!--
+  1. 후손 선택자 : 선택자A 선택자B   <- 선택자B는 선택자A에 반드시 포홤된 경우
+  2. 자손 선택자 : 선택자A > 선택자B <- 부모 선택자A의 직계 자손인 선택자B를 선택 
+  3. 인접 형제 선택자 : 선택자A + 선택자B <- 선택자A에 바로 다음에 위치한 선택자B를 선택
+  4. 일반 형제 선택자 : 선택자A ~ 선택자B <- 선택자A에 직접해서 나타나는 선택자B
+  5. 그룹 선택자 : 선택자A, 선택자B  <- 선택자A, 선택자B를 모두 선택       
+-->
+  
+<!-- 3. 인접 형제 선택자 -->
+  <div> 
+      <h1> 인접 형제 선택자1 </h1>
+      <h2> 인접 형제 선택자2 </h2>
+      <ul> 목록
+          <li> 주제1 </li>
+          <li> 주제2 </li>
+      </ul>
+  </div>
+  <h3> Adjacent Selector_1 </h3>
+  <p> 인접 형제 선택자에의한 스타일 적용 </p>
+  <h3> Adjacent Selector_2 </h3>
+  <span> 인접형제 실습1 </span>
+  <p> 인접형제 실습2</p>
+
+
+
+</body>
+</html>
