@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" type="text/css" href="./css/detail_layout.css">
+   <script src="js/includeHTML.js"></script>
+
+</head>
+
+<body>
+
+   <div data-include-path="index_header.html"></div>
+
+   <script>
+      window.addEventListener('load', function () {
+         var allElements = document.getElementsByTagName('*');
+         Array.prototype.forEach.call(allElements, function (el) {
+            var includePath = el.dataset.includePath;
+            if (includePath) {
+               var xhttp = new XMLHttpRequest();
+               xhttp.onreadystatechange = function () {
+                  if (this.readyState == 4 && this.status == 200) {
+                     el.outerHTML = this.responseText;
+                  }
+               };
+               xhttp.open('GET', includePath, true);
+               xhttp.send();
+            }
+         });
+      });
+   </script>
+
+   <div data-include-path="detail_cert_aside.html"></div>
+
+   <script>
+      window.addEventListener('load', function () {
+         var allElements = document.getElementsByTagName('*');
+         Array.prototype.forEach.call(allElements, function (el) {
+            var includePath = el.dataset.includePath;
+            if (includePath) {
+               var xhttp = new XMLHttpRequest();
+               xhttp.onreadystatechange = function () {
+                  if (this.readyState == 4 && this.status == 200) {
+                     el.outerHTML = this.responseText;
+                  }
+               };
+               xhttp.open('GET', includePath, true);
+               xhttp.send();
+            }
+         });
+      });
+   </script>
+
+   <div data-include-path="detail_main.html"></div>
+
+   <script>
+      window.addEventListener('load', function () {
+         var allElements = document.getElementsByTagName('*');
+         Array.prototype.forEach.call(allElements, function (el) {
+            var includePath = el.dataset.includePath;
+            if (includePath) {
+               var xhttp = new XMLHttpRequest();
+               xhttp.onreadystatechange = function () {
+                  if (this.readyState == 4 && this.status == 200) {
+                     el.outerHTML = this.responseText;
+                  }
+               };
+               xhttp.open('GET', includePath, true);
+               xhttp.send();
+            }
+         });
+      });
+   </script>
+
+   <div data-include-path="index_footer.html"></div>
+
+   <script>
+      window.addEventListener('load', function () {
+         var allElements = document.getElementsByTagName('*');
+         Array.prototype.forEach.call(allElements, function (el) {
+            var includePath = el.dataset.includePath;
+            if (includePath) {
+               var xhttp = new XMLHttpRequest();
+               xhttp.onreadystatechange = function () {
+                  if (this.readyState == 4 && this.status == 200) {
+                     el.outerHTML = this.responseText;
+                  }
+               };
+               xhttp.open('GET', includePath, true);
+               xhttp.send();
+            }
+         });
+      });
+   </script>
+
+</body>
+
+</html>

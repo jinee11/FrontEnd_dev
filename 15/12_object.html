@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <p id="d1"></p>
+   <p id="d2"></p>
+   <p id="d3"></p>
+   <p id="d4"></p>
+
+   <p id="d5"></p>
+
+   1970년 1월 1일부터 오늘까지
+   <p id="d6"></p>
+   ms가 지났습니다.
+
+   <script>
+      var today = new Date();
+      document.getElementById("d1").textContent = today.getFullYear() + "년";
+      document.getElementById("d2").textContent = today.getMonth() + 1 + "월";
+      document.getElementById("d3").textContent = today.getDate() + "일";
+      document.getElementById("d4").textContent = today.getHours() + "시" + today.getMinutes() + "분";
+      document.getElementById("d5").textContent = today;
+      document.getElementById("d6").textContent = today.getTime();
+
+   </script>
+
+</body>
+
+</html>

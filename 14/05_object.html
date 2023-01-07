@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <div id="upspeed"></div>
+   <div id="downspeed"></div>
+
+   <script>
+      //객체 생성 1번째 방법(가장 일반적인 방법)
+      var car = {
+         name: "sonate",
+         speed: 100,
+         color: 'white',
+         speedup: function (a) { //speedup함수를 호출할때 인풋값 받고
+            var sp = this.speed + a; //sp 변수에 기존 speed에 +=인풋값을 저장하는데
+            if (sp > 300) { //300보다 크다면 
+               sp = 300;   //그냥 300을 리턴
+               return sp;
+            }
+            else {
+               return sp; //아니면 기존값+=인풋값 그대로
+            }
+         },
+         speeddown: function (a) { //speeddown함수를 호출할때 인풋값 받고
+            var sp = this.speed - a; //sp 변수에 기존 speeddown에 -=인풋값을 저장하는데
+            if (sp < 0) { //sp가 0보다 작으면
+               sp = 0;  //0을 리턴
+               return sp;
+            }
+            else {
+               return sp; //아니면 기존값-=인풋값 그대로
+            }
+         }
+      }
+
+      //객체화
+      var upspeed = document.getElementById("upspeed");
+      var downspeed = document.getElementById("downspeed");
+
+      //인풋 값 넣고 출력
+      upspeed.textContent = '속도증가 : ' + car.speedup(400);
+      downspeed.textContent = '속도감소 : ' + car.speeddown(30);
+   </script>
+</body>
+
+</html>

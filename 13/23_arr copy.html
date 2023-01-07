@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      
+      var arrdata = [];
+
+      //값을 넣는 함수
+      function insertArr () {
+         for (var i = 0; i < 100 ; i++) {
+            arrdata[i] = i + 1;  //insert(입력)
+            document.write(arrdata[i] + " "); //select(출력)
+         }
+
+         //배열방의 크기를 출력
+         document.write("<p/>배열 방의 크기 : " + arrdata.length + "<p/>");
+
+      }
+      insertArr();
+
+      // //arrdata 배열 방의 내용 출력
+      // function selectArr () {
+      //    for (var i = 0 ; i < arrdata.length ; i++) {
+      //       document.write (arrdata[i] + " ");
+      //    }
+      //    document.write("<p/>배열 방의 크기 : " + arrdata.length + "<p/>");
+      // }
+
+
+      // //각 방의 값을 0으로 초기화
+      // function delDataArr () {
+      //    for (var i = 0 ; i < arrdata.length ; i++) {
+      //       arrdata[i] = 0;
+      //    }
+      //    selectArr();
+      // }
+
+      // //배열 방의 모든 값을 초기화 : 배열 방의 크기를 0으로 초기화
+      // function allDelArr () {
+      //    arrdata.length = 0; //배열의 방크기를 초기화
+      //    selectArr();
+      // }
+
+   </script>
+
+
+   
+   
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+   <!-- 매개 변수의 갯수가 임의로 들어올때 자바스크립트에서 처리 -->
+   <script>
+      function add(x, y, z) {
+         var sum;
+         
+         // undefined <- 값이 없다
+         //매개변수가 x만 인풋될때
+         if ((y === undefined) && (z === undefined)) {
+            sum = x;
+         }
+         else if ((z === undefined)) { //매개변수가 x, y가 들어왔을때
+            sum = x + y;
+         }
+         else { //매개변수 x, y, z 다들어왔을때
+            sum = x + y + z;
+         }
+         return sum;
+      }
+
+      //함수호출
+      var r1 = add (2) ; //2
+      var r2 = add (2, 3); //5
+      var r3 = add (4, 5, 6); //15
+
+      //출력
+      document.write("함수 인자 1 :" + r1 + "<p/>");
+      document.write("함수 인자 2 :" + r2 + "<p/>");
+      document.write("함수 인자 3 :" + r3 + "<p/>");
+   </script>
+</body>
+
+</html>

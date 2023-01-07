@@ -1,0 +1,62 @@
+@import url(reset.css);
+
+/* div {
+   display: f;
+} */
+
+.clear {
+   clear: both;
+}
+
+span {
+   display: block;
+   /* background-color: aquamarine; */
+   width: 600px;
+   font-weight: 700;
+   font-size: 35px;
+   margin: 30px;
+}
+
+div {
+   float: left;
+   /* border: 1px solid rebeccapurple; */
+   
+}
+
+#big_img > img {
+   width: 220px;
+   margin: 0 0 0 50px;
+}
+
+#big_img div {
+   border: 1px;
+}
+
+#min_img {
+   margin: -80px 0 0 45px;
+}
+
+#min_img li {
+   display: inline;
+}
+
+#min_img li > img {
+   width: 70px;
+}
+
+#main2 {
+   float: left;
+}
+
+#main2 table {
+   margin: 10px 0 0 50px;
+}
+#main2 td {
+   padding: 10px;
+}
+
+#main2_td {
+   border: 1px solid black;
+   padding: 10px 90px 10px 90px;
+   background: rgb(234, 233, 233);
+}

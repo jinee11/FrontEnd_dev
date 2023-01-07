@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+   <!-- 객체 변수를 이용하는 방법 -->
+
+   <div id="carname"></div>
+   <div id="carcolor"></div>
+   <div id="carspeed"></div>
+
+   <script>
+      var car = {
+         name: 'sonata',
+         speed: 100,
+         color: 'red',
+         start: function () {
+            return this.speed + 10;
+         }//speed함수에 기존값 +=10을 더해서 돌려줌
+      };
+
+      //
+
+      //함수호출
+      var cname = document.getElementById("carname");
+      cname.textContent = car.name;
+      // document.getElementById("carname").textContent = car.name; 똑같이 출력
+
+      var colname = document.getElementById("carcolor");
+      colname.textContent = car.color;
+
+      var cspeed = document.getElementById("carspeed");
+      cspeed.textContent = car.start();
+   </script>
+</body>
+
+</html>

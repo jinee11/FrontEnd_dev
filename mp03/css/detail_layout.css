@@ -16,35 +16,36 @@ body {
 }
 div {
    /* border: 1px solid red; */
+   float: left;
 }
 
 #wrap {
-   width: 1080px; 
+   width: 1080px; height: 1565px;
    margin: 0 auto;
    
 }
 
 /* 헤더 */
 #out_header {
-   /* width: 1080px; height: 120px; */
+   width: 1080px; height: 120px;
 }
 
 /* aside 두번째 페이지부터 적용하기*/
-/* #out_aside {
+#out_aside {
    width: 300px; height: 1300px;
-} */
+}
 
 /* 메인 두번째 페이지부터 적용하기*/
-/* #out_main {
+#out_main {
    width: 772px; height: 1300px;
    float: left;
-} */
+}
 
 /* 메인 */
-#out_main {
-   /* width: 1080px; height: 1290px; */
+/* #out_main {
+   width: 1080px; height: 1290px;
    float: left;
-}
+} */
 /* 푸터 */
 #out_footer {
    width: 1080px; height: 150px;

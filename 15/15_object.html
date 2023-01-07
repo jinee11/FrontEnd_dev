@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      table {
+         border: 1px solid rebeccapurple;
+      }
+
+      table tr,
+      td {
+         border: 1px solid rebeccapurple;
+      }
+   </style>
+
+</head>
+
+<body>
+   <!-- 
+      createElement() : 
+    -->
+
+   <a href="#" onclick="add()">당신의 이름은 무엇입니까?</a>
+
+   <script>
+      function add() {
+
+         //h3 태그를 생성해서 header 객체 생성
+         var header = document.createElement('h3');
+         var textNode = document.createTextNode('내 이름은 홍길동 입니다.');
+
+         //<h3> 내 이름은 홍길동 입니다 </h3> 적용하는 단락 
+         header.appendChild(textNode);
+         document.body.appendChild(header);
+
+      }
+   </script>
+
+</body>
+
+</html>

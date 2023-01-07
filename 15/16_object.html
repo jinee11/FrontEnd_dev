@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>이미지 추가 누르면 이미지가 추가되게</title>
+   <style>
+
+   </style>
+
+   <script>
+      //2. add() 함수 소환
+      function add() {
+         var img = document.createElement('img');
+
+         //img 객체(태그)의 속성값 할당 (src, width, height...)
+
+         img.src = 'html5.jpg';
+         img.width = 100;
+         img.setAttribute('height', 150);
+
+         document.body.appendChild(img);
+      }
+   </script>
+</head>
+
+<body>
+
+   <!-- 링키를 클릭하면 img 태그를 생성해서 body에 추가해서 넣음 -->
+   <a href="#" onclick="add()">이미지 추가</a> <!-- 1. 이미지 추가를 누르면 -->
+
+</body>
+
+</html>

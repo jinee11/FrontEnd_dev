@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <script>
+      var arr0 = [10, 20, 30, 40, 50];
+      var arr1 = [11, 21, 31, 41, 51];
+      var arr2 = [12, 22, 32, 42, 52];
+      var arr3 = [13, 23, 33, 43, 53];
+
+      var allArr = [arr0, arr1, arr2, arr3]; //2차원 배열 생성해서 1차원 배열 값 할당
+      var partArr = [arr1, arr3]
+
+      function printAll() {
+         for (var i = 0; i < allArr.length; i++) {
+            for (var j = 0; j < allArr[i].length; j++) {
+               document.write(allArr[i][j] + " ");
+            }
+            document.write("<p/>");
+         }
+         document.write("<a href='39_arr.html'>돌아가기</a>");
+      }
+
+      function printPart() {
+         for (var i = 0; i < partArr.length; i++) {
+            for (var j = 0; j < partArr[i].length; j++) {
+               document.write(partArr[i][j] + " ");
+            }
+            document.write("<p/>");
+         }
+         document.write("<a href='39_arr.html'>돌아가기</a>");
+      }
+   </script>
+   <button type="button" onclick="printAll()">전체 배열의 데이터 보기</button>
+   <p />
+   <button type="button" onclick="printPart()">홀수 배열의 데이터 보기</button>
+   <p />
+
+</body>
+
+</html>

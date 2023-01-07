@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <!-- 전역 변수와 지역 변수 이해하기 -->
+   <script>
+
+      //function : 함수선언
+      function getGrade() {
+         var kor=95; //지역변수 : 함수 내부에 변수선언 (함수 외부에서 사용불가)
+      }
+      var kor = 100; //전역변수 : 함수 밖에서 변수선언
+      document.write ("국어 점수 : " + kor + "<P/>");
+   </script>
+</body>
+</html>
